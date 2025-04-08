@@ -1,0 +1,19 @@
+meta {
+  name: createBook
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/books/123-456-1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "isbn":"123-456-789",
+    "title":"The Waves In Heart",
+    "author": null
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: boookUpdate
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:8080/books/123-456-1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "isbn": "123-456-0",
+      "title": "The Waves In eyes",
+      "authorEntity": null
+    }
+}

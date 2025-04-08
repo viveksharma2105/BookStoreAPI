@@ -1,0 +1,19 @@
+meta {
+  name: UpdateAuthor
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:8080/authors/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 2,
+    "name": "viri Aachariya",
+    "age": 5
+  }
+}

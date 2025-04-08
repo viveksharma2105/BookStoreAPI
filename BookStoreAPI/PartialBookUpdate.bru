@@ -1,0 +1,17 @@
+meta {
+  name: PartialBookUpdate
+  type: http
+  seq: 10
+}
+
+patch {
+  url: http://localhost:8080/books/123-456-0
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+   "title": "The Waves in My dil"
+  }
+}

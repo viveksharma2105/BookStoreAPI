@@ -1,0 +1,18 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/authors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Vivek Aachariya",
+    "age": 23000
+  }
+}

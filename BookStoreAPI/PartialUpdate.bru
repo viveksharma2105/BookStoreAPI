@@ -1,0 +1,17 @@
+meta {
+  name: PartialUpdate
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://localhost:8080/authors/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":  "viri Vsharma"
+  }
+}
