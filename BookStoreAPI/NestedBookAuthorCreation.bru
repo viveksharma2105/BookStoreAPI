@@ -1,0 +1,22 @@
+meta {
+  name: NestedBookAuthorCreation
+  type: http
+  seq: 13
+}
+
+put {
+  url: http://localhost:8080/books/123-456-5
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "isbn": "123-456-5",
+    "title": "Love  is  Life",
+    "author": {
+      "name": "Raj",
+      "age": 18
+    }
+  }
+}
